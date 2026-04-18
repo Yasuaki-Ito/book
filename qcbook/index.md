@@ -5,10 +5,14 @@ title: "量子化学計算のしくみ — サポートページ"
 
 <a class="back-link" href="{{ '/' | relative_url }}"><span class="arrow">←</span> 書籍一覧に戻る</a>
 
-<section class="hero">
-  <div class="hero__eyebrow">Book 01 — Support Page</div>
-  <h1 class="hero__title">量子化学計算のしくみ</h1>
-  <p class="hero__lead">分子軌道法の理論とアルゴリズム — 伊藤 靖朗 著</p>
+<section class="hero hero--with-cover">
+  <img class="hero__cover" src="{{ '/qcbook/cover.png' | relative_url }}" alt="量子化学計算のしくみ 表紙">
+  <div class="hero__body">
+    <div class="hero__eyebrow">Book 01 — Support Page</div>
+    <h1 class="hero__title">量子化学計算のしくみ</h1>
+    <p class="hero__lead">分子軌道法の理論とアルゴリズム</p>
+    <p class="hero__byline">伊藤靖朗　著</p>
+  </div>
 </section>
 
 ## 書籍情報
@@ -54,7 +58,7 @@ Hartree-Fock法からCoupled Cluster法、励起状態計算まで、理論の�
 
 本書に入りきらなかった資料や、読者からの要望に基づく補足を公開しています。
 
-- (準備中)
+- （準備中）
 
 ## よくある質問
 
