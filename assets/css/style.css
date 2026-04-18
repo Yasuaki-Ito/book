@@ -1,0 +1,502 @@
+:root {
+  --bg: #faf8f3;
+  --bg-soft: #f3efe6;
+  --surface: #ffffff;
+  --ink: #1b1b1b;
+  --ink-soft: #3a3a3a;
+  --muted: #6b6860;
+  --line: #e4ddcc;
+  --line-strong: #c8bfa8;
+  --accent: #8a6a3b;
+  --accent-deep: #5d4726;
+  --accent-soft: #f1e9d8;
+  --max: 780px;
+  --radius: 4px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+html, body { margin: 0; padding: 0; }
+
+body {
+  font-family: "Inter", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(138,106,59,0.06), transparent 60%),
+    radial-gradient(1000px 500px at 110% 10%, rgba(138,106,59,0.05), transparent 60%),
+    var(--bg);
+  line-height: 1.85;
+  font-feature-settings: "palt", "ss01";
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 1.75rem;
+  width: 100%;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(250,248,243,0.82);
+  backdrop-filter: saturate(1.2) blur(10px);
+  -webkit-backdrop-filter: saturate(1.2) blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  text-decoration: none;
+  color: var(--ink);
+}
+.brand-mark {
+  font-family: "Cormorant Garamond", "Noto Serif JP", serif;
+  font-weight: 600;
+  font-size: 1.35rem;
+  letter-spacing: 0.12em;
+  border: 1px solid var(--line-strong);
+  padding: 0.05rem 0.55rem;
+  border-radius: var(--radius);
+  color: var(--accent-deep);
+  background: var(--surface);
+}
+.brand-name {
+  font-family: "Cormorant Garamond", "Noto Serif JP", serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.18em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+}
+.site-nav { display: flex; gap: 1.4rem; }
+.site-nav a {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.2s;
+}
+.site-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+.site-nav a:hover { color: var(--accent-deep); }
+.site-nav a:hover::after { transform: scaleX(1); transform-origin: left; }
+
+/* ---------- Page ---------- */
+main.page { padding: 3.5rem 0 5rem; flex: 1; }
+
+.prose h1 {
+  font-family: "Noto Serif JP", "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-size: clamp(1.9rem, 2.5vw + 1rem, 2.6rem);
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  margin: 0 0 0.6rem;
+}
+.prose h1 + p,
+.prose h1 + strong {
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+.prose h1::after {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 2px;
+  margin-top: 1.2rem;
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+
+.prose h2 {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+  font-size: 1.35rem;
+  margin-top: 3.2rem;
+  margin-bottom: 1.1rem;
+  padding-left: 0.9rem;
+  border-left: 3px solid var(--accent);
+  letter-spacing: 0.02em;
+}
+
+.prose h3 {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+  font-size: 1.12rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+.prose p {
+  margin: 0.9rem 0;
+  color: var(--ink-soft);
+}
+
+.prose a {
+  color: var(--accent-deep);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-strong);
+  transition: border-color 0.2s, color 0.2s;
+}
+.prose a:hover {
+  color: var(--ink);
+  border-bottom-color: var(--accent);
+}
+.prose h3 a {
+  color: var(--ink);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 2px;
+}
+.prose h3 a:hover {
+  color: var(--accent-deep);
+  border-bottom-color: var(--accent-deep);
+}
+
+.prose ul {
+  padding-left: 1.25rem;
+  margin: 0.8rem 0;
+}
+.prose ul li { margin: 0.35rem 0; }
+.prose ul li::marker { color: var(--accent); }
+
+.prose strong { font-weight: 600; color: var(--ink); }
+.prose small { color: var(--muted); font-size: 0.85rem; letter-spacing: 0.05em; }
+
+.prose hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--line-strong) 20%, var(--line-strong) 80%, transparent);
+  margin: 3rem 0;
+}
+
+.prose blockquote {
+  margin: 1.2rem 0;
+  padding: 0.2rem 1rem;
+  border-left: 3px solid var(--line-strong);
+  color: var(--muted);
+  font-style: italic;
+}
+
+.prose code {
+  background: var(--bg-soft);
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  font-size: 0.92em;
+  font-family: "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2rem 0;
+  font-size: 0.94rem;
+}
+.prose table th,
+.prose table td {
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+.prose table th {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+  background: var(--bg-soft);
+}
+
+/* ---------- Hero (index) ---------- */
+.hero {
+  margin: 0 0 3rem;
+}
+.hero__eyebrow {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.3em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 0.9rem;
+}
+.hero__title {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 3vw + 1rem, 2.8rem);
+  line-height: 1.25;
+  margin: 0 0 0.8rem;
+  letter-spacing: 0.02em;
+}
+.hero__lead {
+  color: var(--muted);
+  font-size: 1.02rem;
+  max-width: 38em;
+  margin: 0;
+}
+
+/* ---------- Book cards ---------- */
+.book-list {
+  display: grid;
+  gap: 1.25rem;
+  margin: 1.5rem 0 0;
+}
+.book-card {
+  display: block;
+  padding: 1.8rem 1.8rem 1.6rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  overflow: hidden;
+}
+.book-card::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--accent);
+  transform: scaleY(0.3);
+  transform-origin: top;
+  transition: transform 0.3s ease;
+}
+.book-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px -18px rgba(93, 71, 38, 0.35);
+  border-color: var(--line-strong);
+}
+.book-card:hover::before { transform: scaleY(1); }
+.book-card__meta {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.32em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+.book-card__title {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.4;
+  margin: 0 0 0.25rem;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+}
+.book-card__subtitle {
+  font-family: "Noto Serif JP", serif;
+  font-size: 0.98rem;
+  color: var(--muted);
+  margin-bottom: 0.9rem;
+}
+.book-card__desc {
+  margin: 0 0 1rem;
+  color: var(--ink-soft);
+  font-size: 0.96rem;
+  line-height: 1.8;
+}
+.book-card__cta {
+  font-size: 0.88rem;
+  letter-spacing: 0.12em;
+  color: var(--accent-deep);
+  font-weight: 500;
+}
+.book-card__cta .arrow {
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+.book-card:hover .book-card__cta .arrow { transform: translateX(4px); }
+
+/* ---------- Info box ---------- */
+.info-grid {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  gap: 0.5rem 1.2rem;
+  margin: 1rem 0;
+  padding: 1.2rem 1.4rem;
+  background: var(--bg-soft);
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+}
+.info-grid dt {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+  color: var(--muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+}
+.info-grid dd {
+  margin: 0;
+  color: var(--ink);
+}
+
+/* ---------- Back link ---------- */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  text-decoration: none;
+  margin-bottom: 2rem;
+  border-bottom: none !important;
+  transition: color 0.2s;
+}
+.back-link:hover { color: var(--accent-deep); }
+.back-link .arrow { transition: transform 0.2s; display: inline-block; }
+.back-link:hover .arrow { transform: translateX(-3px); }
+
+/* ---------- Tools grid ---------- */
+.tool {
+  padding: 1.3rem 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  margin: 0.9rem 0;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.tool:hover {
+  border-color: var(--line-strong);
+  transform: translateY(-1px);
+}
+.tool h4 {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0 0 0.4rem;
+}
+.tool h4 a {
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 1px;
+  color: var(--ink);
+}
+.tool p {
+  margin: 0;
+  font-size: 0.94rem;
+  color: var(--ink-soft);
+  line-height: 1.75;
+}
+
+/* ---------- FAQ ---------- */
+.faq-item {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.faq-item:last-child { border-bottom: none; }
+.faq-item .q {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 0.5rem;
+  padding-left: 1.4rem;
+  position: relative;
+}
+.faq-item .q::before {
+  content: "Q.";
+  position: absolute;
+  left: 0;
+  font-family: "Cormorant Garamond", serif;
+  color: var(--accent);
+  font-weight: 600;
+}
+.faq-item .a {
+  padding-left: 1.4rem;
+  position: relative;
+  color: var(--ink-soft);
+  font-size: 0.96rem;
+  margin: 0;
+}
+.faq-item .a::before {
+  content: "A.";
+  position: absolute;
+  left: 0;
+  font-family: "Cormorant Garamond", serif;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* ---------- Contact callout ---------- */
+.contact {
+  margin: 2rem 0;
+  padding: 1.6rem 1.8rem;
+  background: linear-gradient(135deg, var(--accent-soft), var(--bg-soft));
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+}
+.contact p { margin: 0 0 0.6rem; color: var(--ink-soft); }
+.contact p:last-child { margin-bottom: 0; }
+.contact a.btn {
+  display: inline-block;
+  margin-top: 0.3rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--ink);
+  color: var(--bg);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  transition: background 0.2s, transform 0.2s;
+}
+.contact a.btn:hover {
+  background: var(--accent-deep);
+  transform: translateY(-1px);
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 2rem 0;
+  margin-top: auto;
+  background: var(--bg-soft);
+}
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: center;
+  text-align: center;
+}
+.footer-brand {
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.site-footer small {
+  color: var(--muted);
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .container { padding: 0 1.2rem; }
+  .header-inner { flex-direction: column; gap: 0.6rem; align-items: flex-start; }
+  .site-nav { gap: 1rem; }
+  main.page { padding: 2rem 0 3.5rem; }
+  .info-grid { grid-template-columns: 1fr; gap: 0.2rem; padding: 1rem; }
+  .info-grid dt { margin-top: 0.4rem; }
+  .book-card { padding: 1.4rem 1.3rem; }
+}

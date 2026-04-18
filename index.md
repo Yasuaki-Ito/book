@@ -1,35 +1,33 @@
 ---
 layout: default
-title: "書籍サポートページ"
+title: "伊藤靖朗 — 書籍サポートページ"
 ---
 
-# 伊藤靖朗 — 書籍サポートページ
-
-著書に関する正誤表、補足資料、お問い合わせ窓口をまとめたページです。
-
----
+<section class="hero">
+  <div class="hero__eyebrow">Books by Yasuaki Ito</div>
+  <h1 class="hero__title">書籍サポートページ</h1>
+  <p class="hero__lead">著書に関する正誤表、補足資料、ご質問の窓口をまとめたページです。</p>
+</section>
 
 ## 書籍一覧
 
-### [量子化学計算のしくみ — 分子軌道法の理論とアルゴリズム](qcbook/)
+<div class="book-list">
+  <a class="book-card" href="{{ '/qcbook/' | relative_url }}">
+    <div class="book-card__meta">Book 01 — 2026</div>
+    <div class="book-card__title">量子化学計算のしくみ</div>
+    <div class="book-card__subtitle">分子軌道法の理論とアルゴリズム</div>
+    <p class="book-card__desc">
+      Hartree-Fock法からCoupled Cluster法、励起状態計算まで、理論とアルゴリズムの両面から解説。ブラウザで動く GANSU Lite / MOrbVis でハンズオン実習。
+    </p>
+    <div class="book-card__cta">サポートページへ <span class="arrow">→</span></div>
+  </a>
+</div>
 
-Hartree-Fock法からCoupled Cluster法、励起状態計算まで、理論とアルゴリズムの両面から解説。ブラウザで動く GANSU Lite / MOrbVis でハンズオン実習。
-
-- 正誤表・補足資料・FAQ → [サポートページ](qcbook/)
-
-<!-- 書籍が増えたらここに追加:
-### [次の本のタイトル](next-book/)
-説明文...
--->
-
----
+<!-- 書籍が増えたら book-list 内に <a class="book-card"> をもう一つ追加 -->
 
 ## お問い合わせ
 
-書籍に関する正誤のご報告、ご質問、ご意見・ご感想は以下の連絡フォームからお寄せください。
-
-- **連絡フォーム**：[https://forms.gle/EmTWhXoxAEaDB8U3A](https://forms.gle/EmTWhXoxAEaDB8U3A)
-
----
-
-<small>&copy; 2026 伊藤 靖朗</small>
+<div class="contact">
+  <p>正誤のご報告、ご質問、ご意見・ご感想は連絡フォームからお寄せください。</p>
+  <p><a class="btn" href="https://forms.gle/EmTWhXoxAEaDB8U3A">連絡フォームを開く →</a></p>
+</div>
