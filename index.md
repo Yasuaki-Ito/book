@@ -26,10 +26,9 @@ Hartree-Fock法からCoupled Cluster法、励起状態計算まで、理論と�
 
 ## お問い合わせ
 
-書籍に関する正誤のご報告、ご質問、ご意見・ご感想は以下のフォームからお寄せください。
+書籍に関する正誤のご報告、ご質問、ご意見・ご感想は以下の連絡フォームからお寄せください。
 
-- **ご連絡フォーム**：[https://forms.gle/EmTWhXoxAEaDB8U3A](https://forms.gle/EmTWhXoxAEaDB8U3A)
-- **著者 Web サイト**：[https://www.emb.hiroshima-u.ac.jp/yasuaki/](https://www.emb.hiroshima-u.ac.jp/yasuaki/)
+- **連絡フォーム**：[https://forms.gle/EmTWhXoxAEaDB8U3A](https://forms.gle/EmTWhXoxAEaDB8U3A)
 
 ---
 

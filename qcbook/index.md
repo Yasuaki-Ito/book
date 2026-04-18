@@ -27,7 +27,7 @@ Hartree-Fock法からCoupled Cluster法、励起状態計算まで、理論の�
 
 ブラウザで動く量子化学計算ツール。インストール不要。HF / DFT / MP2 / MP3 / CCSD / CIS / ADC(2) に対応。本書の各章のテーマに対応したデモページを備えています。
 
-### [MOrbVis](https://yasuaki-ito.github.io/MOrbVis/)
+### [MOrbVis](https://yasuaki-ito.github.io/morbvis/)
 
 分子軌道を3次元で可視化するブラウザツール。GANSU Lite の計算結果から直接開くことができます。
 
@@ -77,10 +77,9 @@ GANSU Lite は CCSD(T) に対応していません。CCSD(T) を実行するに�
 
 ## お問い合わせ
 
-正誤のご報告、ご意見・ご感想は以下のフォームからお寄せください。
+正誤のご報告、ご意見・ご感想は以下の連絡フォームからお寄せください。
 
-- **ご連絡フォーム**：[https://forms.gle/EmTWhXoxAEaDB8U3A](https://forms.gle/EmTWhXoxAEaDB8U3A)
-- **著者 Web サイト**：[https://www.emb.hiroshima-u.ac.jp/yasuaki/](https://www.emb.hiroshima-u.ac.jp/yasuaki/)
+- **連絡フォーム**：[https://forms.gle/EmTWhXoxAEaDB8U3A](https://forms.gle/EmTWhXoxAEaDB8U3A)
 
 ---
 
