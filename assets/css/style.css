@@ -263,8 +263,8 @@ main.page { padding: 3.5rem 0 5rem; flex: 1; }
 /* ---------- Hero with cover ---------- */
 .hero--with-cover {
   display: grid;
-  grid-template-columns: minmax(170px, 220px) 1fr;
-  gap: 2.5rem;
+  grid-template-columns: 130px 1fr;
+  gap: 2rem;
   align-items: center;
 }
 .hero--with-cover .hero__body { min-width: 0; }
@@ -364,8 +364,8 @@ main.page { padding: 3.5rem 0 5rem; flex: 1; }
 
 .book-card--with-cover {
   display: grid;
-  grid-template-columns: 110px 1fr;
-  gap: 1.6rem;
+  grid-template-columns: 70px 1fr;
+  gap: 1.3rem;
   align-items: start;
 }
 .book-card--with-cover .book-card__body { min-width: 0; }
@@ -560,18 +560,11 @@ main.page { padding: 3.5rem 0 5rem; flex: 1; }
   .info-grid dt { margin-top: 0.4rem; }
   .book-card { padding: 1.4rem 1.3rem; }
   .hero--with-cover {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    text-align: center;
+    grid-template-columns: 100px 1fr;
+    gap: 1.2rem;
   }
-  .hero--with-cover .hero__cover {
-    max-width: 200px;
-    margin: 0 auto;
-  }
-  .hero--with-cover .hero__title::after,
-  .hero--with-cover .hero__body h1::after { margin-left: auto; margin-right: auto; }
   .book-card--with-cover {
-    grid-template-columns: 90px 1fr;
-    gap: 1.1rem;
+    grid-template-columns: 60px 1fr;
+    gap: 1rem;
   }
 }
