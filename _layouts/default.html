@@ -1,26 +1,49 @@
 <!DOCTYPE html>
-<html lang="ja">
+{%- assign lang = page.lang | default: site.lang | default: 'ja' -%}
+<html lang="{{ lang }}">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{%- if lang == 'en' -%}
+<title>{{ page.title | default: site.title_en }}</title>
+<meta name="description" content="{{ page.description | default: site.description_en }}">
+{%- else -%}
 <title>{{ page.title | default: site.title }}</title>
 <meta name="description" content="{{ page.description | default: site.description }}">
+{%- endif %}
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%93%93</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%93%93</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="{{ '/' | relative_url }}">
-      <span class="brand-mark">Y・I</span>
-      <span class="brand-name">Yasuaki&nbsp;Ito</span>
+    <a class="brand" href="{% if lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
+      <span class="brand-name">
+        {%- if lang == 'en' -%}Yasuaki&nbsp;Ito{%- else -%}伊藤 靖朗{%- endif -%}
+      </span>
     </a>
     <nav class="site-nav">
+      {%- if lang == 'en' -%}
+      <a href="{{ '/en/' | relative_url }}">Books</a>
+      <a href="https://forms.gle/EmTWhXoxAEaDB8U3A">Contact</a>
+      {%- else -%}
       <a href="{{ '/' | relative_url }}">書籍一覧</a>
       <a href="https://forms.gle/EmTWhXoxAEaDB8U3A">お問い合わせ</a>
+      {%- endif -%}
+      <span class="lang-switch">
+        {%- if lang == 'en' -%}
+        <span class="lang-switch__current">EN</span>
+        <span class="lang-switch__sep">／</span>
+        <a class="lang-switch__alt" href="{{ page.alt_url | default: '/' | relative_url }}" hreflang="ja">日本語</a>
+        {%- else -%}
+        <span class="lang-switch__current">日本語</span>
+        <span class="lang-switch__sep">／</span>
+        <a class="lang-switch__alt" href="{{ page.alt_url | default: '/en/' | relative_url }}" hreflang="en">EN</a>
+        {%- endif -%}
+      </span>
     </nav>
   </div>
 </header>
@@ -33,8 +56,11 @@
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <div class="footer-brand">Yasuaki Ito — 書籍サポートページ</div>
-    <small>&copy; 2026 伊藤 靖朗</small>
+    <div class="footer-ornament">❦</div>
+    <div class="footer-brand">
+      {%- if lang == 'en' -%}Yasuaki Ito — Book Companion Site{%- else -%}伊藤 靖朗　書籍サポートページ{%- endif -%}
+    </div>
+    <small>&copy; 2026 Yasuaki Ito</small>
   </div>
 </footer>
 </body>

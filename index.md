@@ -1,6 +1,8 @@
 ---
 layout: default
-title: "伊藤靖朗 — 書籍サポートページ"
+title: "伊藤靖朗　書籍サポートページ"
+lang: ja
+alt_url: /en/
 ---
 
 <section class="hero">
@@ -21,12 +23,12 @@ title: "伊藤靖朗 — 書籍サポートページ"
       <p class="book-card__desc">
         Hartree-Fock法からCoupled Cluster法、励起状態計算まで、理論とアルゴリズムの両面から解説。ブラウザで動く GANSU Lite / MOrbVis でハンズオン実習。
       </p>
-      <div class="book-card__cta">サポートページへ <span class="arrow">→</span></div>
+      <div class="book-card__cta">Read more <span class="arrow">——→</span></div>
     </div>
   </a>
 </div>
 
-<!-- 書籍が増えたら book-list 内に <a class="book-card"> をもう一つ追加 -->
+<div class="ornament">❦</div>
 
 ## お問い合わせ
 
