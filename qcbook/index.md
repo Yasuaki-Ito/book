@@ -21,12 +21,13 @@ alt_url: /en/qcbook/
 
 ## 書籍情報
 
-Hartree-Fock法からCoupled Cluster法、励起状態計算まで、理論の導出とアルゴリズムの両面から体系的に解説する教科書です。ブラウザで動く GANSU Lite と MOrbVis を使って、手を動かしながら学べます。
+Hartree-Fock法からCoupled Cluster法、励起状態計算まで、理論の導出とアルゴリズムの両面から体系的に解説する教科書です。ブラウザで動くGANSU LiteとMOrbVisを使って、手を動かしながら学べます。
 
 <dl class="info-grid">
   <dt>著者</dt><dd>伊藤靖朗</dd>
   <dt>発行</dt><dd>Amazon Kindle Direct Publishing</dd>
   <dt>形式</dt><dd>ペーパーバック ／ Kindle</dd>
+  <dt>購入</dt><dd><a href="https://www.amazon.co.jp/dp/B0GX2VGWGT">Amazon.co.jp</a></dd>
 </dl>
 
 ## 関連ツール
