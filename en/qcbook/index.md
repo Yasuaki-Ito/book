@@ -9,7 +9,7 @@ permalink: /en/qcbook/
 <a class="back-link" href="{{ '/en/' | relative_url }}"><span class="arrow">←</span> Back to all books</a>
 
 <section class="hero hero--with-cover">
-  <img class="hero__cover" src="{{ '/qcbook/cover.png' | relative_url }}" alt="Inside Quantum Chemistry Calculations — cover">
+  <img class="hero__cover" src="{{ '/qcbook/cover-en.png' | relative_url }}" alt="Inside Quantum Chemistry Calculations — cover">
   <div class="hero__body">
     <div class="hero__eyebrow">Book 01 — Companion</div>
     <h1 class="hero__title">Inside Quantum Chemistry Calculations</h1>

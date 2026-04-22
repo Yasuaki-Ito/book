@@ -16,7 +16,7 @@ permalink: /en/
 
 <div class="book-list">
   <a class="book-card book-card--with-cover" href="{{ '/en/qcbook/' | relative_url }}">
-    <img class="book-card__cover" src="{{ '/qcbook/cover.png' | relative_url }}" alt="Inside Quantum Chemistry Calculations — cover">
+    <img class="book-card__cover" src="{{ '/qcbook/cover-en.png' | relative_url }}" alt="Inside Quantum Chemistry Calculations — cover">
     <div class="book-card__body">
       <div class="book-card__meta">Book 01 — 2026</div>
       <div class="book-card__title">Inside Quantum Chemistry Calculations</div>
