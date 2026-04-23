@@ -28,6 +28,7 @@ A textbook that systematically derives the methods of modern quantum chemistry â
   <dt>Author</dt><dd>Yasuaki Ito</dd>
   <dt>Publisher</dt><dd>Amazon Kindle Direct Publishing</dd>
   <dt>Format</dt><dd>Paperback / Kindle</dd>
+  <dt>ISBN-13</dt><dd>979-8258298980</dd>
   <dt>Buy</dt><dd><a href="https://www.amazon.com/dp/B0GY2JG54J">Amazon.com</a></dd>
 </dl>
 

@@ -27,6 +27,7 @@ Hartree-Fock法からCoupled Cluster法、励起状態計算まで、理論の�
   <dt>著者</dt><dd>伊藤靖朗</dd>
   <dt>発行</dt><dd>Amazon Kindle Direct Publishing</dd>
   <dt>形式</dt><dd>ペーパーバック ／ Kindle</dd>
+  <dt>ISBN-13</dt><dd>979-8257774102</dd>
   <dt>購入</dt><dd><a href="https://www.amazon.co.jp/dp/B0GX2VGWGT">Amazon.co.jp</a></dd>
 </dl>
 
