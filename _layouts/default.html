@@ -21,6 +21,10 @@
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="{% if lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
+      <span class="brand-label">
+        {%- if lang == 'en' -%}Ito&nbsp;Bunko{%- else -%}伊藤文庫{%- endif -%}
+      </span>
+      <span class="brand-sep">／</span>
       <span class="brand-name">
         {%- if lang == 'en' -%}Yasuaki&nbsp;Ito{%- else -%}伊藤 靖朗{%- endif -%}
       </span>
@@ -58,9 +62,9 @@
   <div class="container footer-inner">
     <div class="footer-ornament">❦</div>
     <div class="footer-brand">
-      {%- if lang == 'en' -%}Yasuaki Ito — Book Companion Site{%- else -%}伊藤 靖朗　書籍サポートページ{%- endif -%}
+      {%- if lang == 'en' -%}Ito Bunko ／ Yasuaki Ito — Book Companion Site{%- else -%}伊藤文庫　／　伊藤 靖朗　書籍サポートページ{%- endif -%}
     </div>
-    <small>&copy; 2026 Yasuaki Ito</small>
+    <small>{%- if lang == 'en' -%}&copy; 2026 Ito Bunko (Yasuaki Ito){%- else -%}&copy; 2026 伊藤文庫（伊藤靖朗）{%- endif -%}</small>
   </div>
 </footer>
 </body>

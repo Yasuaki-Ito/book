@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "量子化学計算理論　サポートページ"
+title: "量子化学計算理論　サポートページ｜伊藤文庫"
 lang: ja
 ---
 

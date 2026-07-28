@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Inside Quantum Chemistry Calculations — Companion Site"
+title: "Inside Quantum Chemistry Calculations — Companion Site | Ito Bunko"
 lang: en
 alt_url: /qcbook/
 permalink: /en/qcbook/

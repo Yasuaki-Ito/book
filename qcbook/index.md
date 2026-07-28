@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "量子化学計算のしくみ　サポートページ"
+title: "量子化学計算のしくみ　サポートページ｜伊藤文庫"
 lang: ja
 alt_url: /en/qcbook/
 ---

@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "Yasuaki Ito — Book Companion Site"
+title: "Ito Bunko | Yasuaki Ito — Book Companion Site"
 lang: en
 alt_url: /
 permalink: /en/
 ---
 
 <section class="hero">
-  <div class="hero__eyebrow">Books by Yasuaki Ito</div>
+  <div class="hero__eyebrow">Ito Bunko ｜ Books by Yasuaki Ito</div>
   <h1 class="hero__title">Book Companion Site</h1>
   <p class="hero__lead">Errata, supplementary materials, and a contact channel for books authored by Yasuaki Ito.</p>
 </section>

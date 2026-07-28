@@ -1,9 +1,11 @@
-title: "伊藤靖朗 — 書籍サポートページ"
-title_en: "Yasuaki Ito — Book Companion Site"
-description: "著書に関する正誤表・補足資料・お問い合わせ"
-description_en: "Errata, supplementary materials, and contact for books by Yasuaki Ito"
+title: "伊藤文庫 — 伊藤靖朗 書籍サポートページ"
+title_en: "Ito Bunko — Yasuaki Ito, Book Companion Site"
+description: "伊藤文庫（伊藤靖朗）の著書に関する正誤表・補足資料・お問い合わせ"
+description_en: "Errata, supplementary materials, and contact for books from Ito Bunko (Yasuaki Ito)"
 baseurl: "/book"
 author: "伊藤 靖朗"
+imprint: "伊藤文庫"
+imprint_en: "Ito Bunko"
 lang: ja
 
 plugins: []

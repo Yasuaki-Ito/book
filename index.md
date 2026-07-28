@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "伊藤靖朗　書籍サポートページ"
+title: "伊藤文庫｜伊藤靖朗　書籍サポートページ"
 lang: ja
 alt_url: /en/
 ---
 
 <section class="hero">
-  <div class="hero__eyebrow">Books by Yasuaki Ito</div>
+  <div class="hero__eyebrow">伊藤文庫 ｜ Books by Yasuaki Ito</div>
   <h1 class="hero__title">書籍サポートページ</h1>
   <p class="hero__lead">著書に関する正誤表、補足資料、ご質問の窓口をまとめたページです。</p>
 </section>
