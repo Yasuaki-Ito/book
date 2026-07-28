@@ -26,6 +26,19 @@ alt_url: /en/
       <div class="book-card__cta">Read more <span class="arrow">——→</span></div>
     </div>
   </a>
+
+  <a class="book-card book-card--with-cover" href="{{ '/qctheory/' | relative_url }}">
+    <img class="book-card__cover" src="{{ '/qctheory/cover.jpg' | relative_url }}" alt="量子化学計算理論 表紙">
+    <div class="book-card__body">
+      <div class="book-card__meta">Book 02 — 2026</div>
+      <div class="book-card__title">量子化学計算理論</div>
+      <div class="book-card__subtitle">シュレーディンガー方程式から電子状態理論まで</div>
+      <p class="book-card__desc">
+        量子化学計算——分子のエネルギーや電子状態を量子力学の第一原理から計算する手法——の理論を、数式の導出を省略せずに体系的にまとめた一冊。Schrödinger方程式から出発し、Hartree–Fock法を経て、電子相関（配置間相互作用・摂動論・Coupled Cluster）と励起状態の理論に至るまでを、一本の論理として導きます。
+      </p>
+      <div class="book-card__cta">Read more <span class="arrow">——→</span></div>
+    </div>
+  </a>
 </div>
 
 <div class="ornament">❦</div>
