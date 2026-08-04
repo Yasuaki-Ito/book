@@ -2,6 +2,7 @@
 layout: default
 title: "量子化学計算理論　サポートページ｜伊藤文庫"
 lang: ja
+alt_url: /en/qctheory/
 ---
 
 <a class="back-link" href="{{ '/' | relative_url }}"><span class="arrow">←</span> 書籍一覧へ戻る</a>

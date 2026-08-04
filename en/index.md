@@ -28,16 +28,16 @@ permalink: /en/
     </div>
   </a>
 
-  <a class="book-card book-card--with-cover" href="{{ '/qctheory/' | relative_url }}">
-    <img class="book-card__cover" src="{{ '/qctheory/cover.jpg' | relative_url }}" alt="Quantum Chemistry Calculation Theory — cover">
+  <a class="book-card book-card--with-cover" href="{{ '/en/qctheory/' | relative_url }}">
+    <img class="book-card__cover" src="{{ '/qctheory/cover-en.jpg' | relative_url }}" alt="Theory of Computational Quantum Chemistry — cover">
     <div class="book-card__body">
-      <div class="book-card__meta">Book 02 — 2026 · Japanese edition only</div>
-      <div class="book-card__title">量子化学計算理論 <span lang="en">(Quantum Chemistry Calculation Theory)</span></div>
-      <div class="book-card__subtitle">From the Schrödinger Equation to Electronic Structure Theory</div>
+      <div class="book-card__meta">Book 02 — 2026</div>
+      <div class="book-card__title">Theory of Computational Quantum Chemistry</div>
+      <div class="book-card__subtitle">From the Schrödinger Equation to Electronic-Structure Theory</div>
       <p class="book-card__desc">
-        A systematic treatment of quantum chemistry theory that never skips a derivation. Starting from the Schrödinger equation and passing through Hartree–Fock, it builds up to electron correlation (configuration interaction, perturbation theory, Coupled Cluster) and excited-state theory as a single continuous line of reasoning. Currently available in Japanese only — an English edition is planned.
+        The quantum chemistry book that leaves nothing "as an exercise for the reader." Starting from the Schrödinger equation, it builds a single continuous argument through Hartree–Fock theory, electron correlation, and excited-state methods — without skipping a line of algebra. The only prerequisite is high-school mathematics.
       </p>
-      <div class="book-card__cta">Read more (in Japanese) <span class="arrow">——→</span></div>
+      <div class="book-card__cta">Read more <span class="arrow">——→</span></div>
     </div>
   </a>
 </div>
