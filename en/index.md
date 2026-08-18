@@ -48,5 +48,6 @@ permalink: /en/
 
 <div class="contact">
   <p>Errata reports, questions, and feedback are warmly welcomed via the form below.</p>
+  <p class="note"><strong>For misprints, missing or misbound pages, and delivery problems, please contact Amazon.</strong> These books are print-on-demand paperbacks: Amazon KDP handles all printing, binding and shipping, so replacements and refunds can only be issued on their side. Please start a return or replacement from <a href="https://www.amazon.com/gp/css/order-history">Your Orders on Amazon</a>.</p>
   <p><a class="btn" href="https://forms.gle/EmTWhXoxAEaDB8U3A">Open contact form →</a></p>
 </div>
