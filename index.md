@@ -47,6 +47,6 @@ alt_url: /en/
 
 <div class="contact">
   <p>正誤のご報告、ご質問、ご意見・ご感想は連絡フォームからお寄せください。</p>
-  <p class="note"><strong>乱丁・落丁・印刷不良・配送に関するお問い合わせは Amazon へお願いします。</strong>各書籍は Amazon KDP のペーパーバックで、印刷・製本・発送はすべて Amazon が行っているため、著者側では交換・返金の対応ができません。<a href="https://www.amazon.co.jp/gp/css/order-history">Amazon の注文履歴</a>から返品・交換のお手続きをお願いします。</p>
+  <p class="note"><strong>製品そのものの不具合 — 乱丁・落丁・印刷不良・配送のトラブル、Kindle 版のダウンロードや表示の不具合 — は Amazon へお願いします。</strong>ペーパーバックの印刷・製本・発送も、Kindle 版の配信も、すべて Amazon が行っており、著者側では交換・返金の対応ができません。<a href="https://www.amazon.co.jp/gp/css/order-history">Amazon の注文履歴</a>から返品・交換のお手続きをお願いします。</p>
   <p><a class="btn" href="https://forms.gle/EmTWhXoxAEaDB8U3A">連絡フォームを開く →</a></p>
 </div>

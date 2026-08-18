@@ -90,6 +90,6 @@ Material that did not fit into the book, plus supplements written in response to
 
 <div class="contact">
   <p>Errata reports, questions, and feedback are warmly welcomed via the form below.</p>
-  <p class="note"><strong>For misprints, missing or misbound pages, and delivery problems, please contact Amazon.</strong> This book is a print-on-demand paperback: Amazon KDP handles all printing, binding and shipping, so replacements and refunds can only be issued on their side. Please start a return or replacement from <a href="https://www.amazon.com/gp/css/order-history">Your Orders on Amazon</a>.</p>
+  <p class="note"><strong>Problems with the product itself — misprints, missing or misbound pages, delivery trouble, or download and display problems with the Kindle edition — should go to Amazon.</strong> Printing, binding and shipping of the paperback, and delivery of the Kindle edition, are all handled by Amazon, so replacements and refunds can only be issued on their side. Please start a return or replacement from <a href="https://www.amazon.com/gp/css/order-history">Your Orders on Amazon</a>.</p>
   <p><a class="btn" href="https://forms.gle/EmTWhXoxAEaDB8U3A">Open contact form →</a></p>
 </div>
